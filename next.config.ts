@@ -1,8 +1,11 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // Add the `src` directory support
-  srcDir: 'src', // Tell Next.js to look in the `src` folder for pages
+  // Enable React Strict Mode for better debugging
+  reactStrictMode: true,
+
+  // Enable SWC minification for faster builds
+  swcMinify: true,
 };
 
 export default nextConfig;
