@@ -77,7 +77,7 @@ const projects = [
   }
 ];
 
-const App = () => {
+const Home = () => {
   const infoRef = useRef(null);
   const projectsRef = useRef(null);
   const skillsRef = useRef(null);
@@ -207,4 +207,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
