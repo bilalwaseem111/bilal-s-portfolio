@@ -1,9 +1,17 @@
-// next.config.js
-module.exports = {
+import type { NextConfig } from 'next'
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
-  webpack(config) {
-    return config;
+  output: 'export', // Required for static export
+  distDir: 'out', // Explicit output directory
+  images: {
+    unoptimized: true // Required for static export
   },
-  // Tell Next.js to look in the `src` folder for pages
-  srcDir: 'src',
+  webpack(config) {
+    return config
+  },
+  // Remove srcDir - Next.js 13+ doesn't use this
+  // Instead, ensure your pages are in src/app (App Router) or src/pages (Pages Router)
 }
+
+export default nextConfig
