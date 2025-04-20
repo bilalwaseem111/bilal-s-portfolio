@@ -12,7 +12,7 @@
     "next": "^15.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.33.2"  // Required for Vercel deployments
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
