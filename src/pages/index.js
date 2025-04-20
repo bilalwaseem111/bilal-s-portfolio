@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Head from 'next/head';
 import Image from 'next/image'; // ✅ Required for optimized images
 import '../styles/globals.css';
 
